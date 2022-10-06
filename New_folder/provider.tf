@@ -1,14 +1,14 @@
 provider "azurerm" {
   features {}
 
-  version         = "3.0.0"
+  version         = "=3.0.0"
 }
 
 terraform {
     backend "azurerm" {
-    storage accoubt_name = "lakshaystorage"
+    storage account_name = "lakshaystorage"
     container_name = "newcontainer"
     Key= "prod.terraform.tfstate"
-    access_key = "A8QckKYnySNpglBznfcdUNwlPFKLN7X/pWkW6Ub7+U2l4sieZXKj6+PnPw7Nbq5C+Jqvt0GalGsz+AStSnMIPQ=="
+    access_key = "qRGC9FfR9pgVxh21EE1JMPuo05u54xHCMXf8qDNRXAhVEUruY/thvxN+avTOoJ0ikznhjhyZ+s+o+ASttZvmJw=="
   }
 }
